@@ -6,6 +6,6 @@ resource "null_resource" "fakery" {
     }
 
     provisioner "local-exec" {
-      command = "echo \"Running on ${var.environment}/${var.region}\""
+      command = "echo \"Running on ${var.environment}/${var.region} as a test\""
     }
 }
