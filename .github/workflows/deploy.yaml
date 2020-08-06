@@ -21,6 +21,6 @@ jobs:
       uses: peter-evans/repository-dispatch@v1.1.1
       with:
         token: ${{ env.GITHUB_TOKEN }}
-        repository: fedjabosnic/tf-infrastructure-{{ env.ENVIRONMENT }}
+        repository: fedjabosnic/tf-infrastructure-${{ env.ENVIRONMENT }}
         event-type: stack-deploy
         client-payload: '{"environment": "${{ env.ENVIRONMENT }}", "sha": "${{ github.sha }}"}'
