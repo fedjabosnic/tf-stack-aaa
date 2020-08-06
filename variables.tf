@@ -1,2 +1,2 @@
 variable "environment" {}
-variable "region" {}
+variable "region"      {}
