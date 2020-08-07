@@ -25,4 +25,4 @@ jobs:
         token: ${{ env.GITHUB_TOKEN }}
         repository: fedjabosnic/tf-infrastructure-${{ env.ENVIRONMENT }}
         event-type: promote-stack
-        client-payload: '{"environment": "${{ env.ENVIRONMENT }}", "stack": "${{ env.STACK }}", "sha": "${{ github.sha }}, "actor": "${{ github.actor }}"}'
+        client-payload: '{"environment": "${{ env.ENVIRONMENT }}", "stack": "${{ env.STACK }}", "sha": "${{ github.sha }}", "actor": "${{ github.actor }}"}'
